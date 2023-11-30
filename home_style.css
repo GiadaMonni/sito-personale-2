@@ -1,0 +1,377 @@
+:root{
+    --azzurro: rgb(99,151,208);
+    --viola: rgb(200,162,200);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+    html {
+    height: 100%;
+    overflow: hidden;
+    }
+
+    body { 
+    margin:0;
+    padding:0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;  
+    }
+
+    h2,h3,h4,h5{
+        font-family: cursive;
+    }
+
+    p{
+        font-family: cursive;
+    }
+  /* NAVBAR */
+    .navbar{
+        height: 80px;
+        font-size: large;
+    }
+
+    .navlink a{
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .navlink{
+        color: var(--azzurro); 
+    }
+
+    .navlink:hover{
+        color: blue;
+        text-shadow: 2px 2px 2px var(--viola);
+    }
+
+    .dropdown-item{
+        color: var(--azzurro) !important;
+    }
+
+    .dropdown-item:hover{
+        color: blue !important;
+        text-shadow: 1px 1px 1px violet;
+    }
+ 
+   li{
+    list-style: none;
+   }
+    
+
+    .logo{
+        height: 55px;
+        border-radius: 50%;
+        border: solid 4px rgb(143, 143, 143);
+    }
+
+    /* fine navbar */
+
+    /* header */
+h1 {
+    font-size: 250%
+    }
+
+        .titolone {
+            animation: updown 3s linear infinite;
+        }
+        @keyframes updown {
+            0% {
+                transform: translateY(-20px);
+            }
+            50% {
+                transform: translateY(20px);
+            }
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+
+    
+
+    .titolone{
+        font-size: 100px;
+        font-family: 'Lobster', cursive;    
+    }
+
+h4{
+    
+    color: yellowgreen !important;
+    direction: rtl;
+}
+
+.testo-rtl {
+    direction: rtl;
+    overflow: hidden; 
+    white-space: nowrap; 
+    animation: slideRightToLeft 5s ease-in-out; 
+  }
+  
+  @keyframes slideRightToLeft {
+    from {
+      transform: translateX(100%); 
+    }
+    to {
+      transform: translateX(0); 
+    }
+  }
+
+  .testo-ltr {
+    direction: ltr;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: slideLeftToRight 4s ease-in-out;
+  }
+  
+  @keyframes slideLeftToRight {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+ /* linguaggi */
+    p {
+    font-size: 20px;
+    line-height: 150%;
+    color: yellow;
+    }
+ 
+
+    .ling1{
+        height: 270px;
+    }
+    
+
+    .slide {
+    position: relative;
+    padding: 25vh 10%;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+    transform-style: inherit;
+    }
+
+  .duofoto1 {
+        position: absolute;
+        top: 50%;
+        right: 2.5%;
+        width: 320px;
+        height: 240px;
+        transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+        padding: 10px;
+        border-radius: 5px;
+        background: rgba(0,0,0, .7);
+        box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+        }
+
+        .duofoto12 {
+            position: absolute;
+            top: 50%;
+            right: 2.5%;
+            width: 320px;
+            height: 240px;
+            transform: translateZ(.05px) scale(.95) translateX(-74%) translateY(-130%) rotate(4deg);
+            padding: 10px;
+            border-radius: 5px;
+            background: rgba(0,0,0, .7);
+            box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+            }
+
+    
+        .duofoto1:last-of-type {
+        transform: translateZ(.3px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+        }
+
+
+    .duofoto2 {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 320px;
+    height: 240px;
+    transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(240,230,220, .7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    }
+
+    .duofoto2:last-of-type {
+    transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+    }
+
+  
+
+    .slide:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+    }
+
+    .title {
+    width: 50%;
+    padding: 5%;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    }
+
+    .title2 {
+        width: 50%;
+        padding: 5%;
+        border-radius: 5px;
+        background: rgba(0,0,0, .7);
+        box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+        color: aliceblue;
+        }
+
+    .slide:nth-child(2n) .title {
+    margin-left: 0;
+    margin-right: auto;
+    }
+
+    .slide:nth-child(2n+1) .title {
+    margin-left: auto;
+    margin-right: 0;
+    }
+
+    .slide, .slide:before {
+    background: 50% 50% / cover;  
+    }
+
+    .header {
+    text-align: center;
+    font-size: 175%;
+    color: #fff;
+    text-shadow: 0 2px 2px #000;
+    }
+
+    #title {
+    background-image: url("https://img.freepik.com/free-photo/close-up-laptop-keyboard-colorful-neon-illumination-backlit-keyboard_169016-29227.jpg?w=996&t=st=1700251883~exp=1700252483~hmac=d2eeb5cc7d1d02b0462480219a57a6ff64bc6b01a1b15d9b1465dbd259c71c4e");
+    z-index:2;
+    }
+
+    #title h1 {
+    transform: translateZ(.25px) scale(.75);
+    transform-origin: 50% 100%;
+
+    }
+
+    #slide1:before {
+    background-image: url("https://img.freepik.com/free-photo/multi-colored-creativity-close-up-human-eye-generated-by-ai_188544-15574.jpg?w=1060&t=st=1700161441~exp=1700162041~hmac=fe9b4657cf63c7a8bfa96d2f70642eded6027034d3cbd15516509c43766cf2dc");
+    transform: translateZ(-1px) scale(2);
+    }
+
+    #slide2 {
+    background-image: url("https://img.freepik.com/free-photo/cloud-neon-color-with-girl-design-illustration_826849-603.jpg?w=740&t=st=1700161736~exp=1700162336~hmac=dc6e87bd69a0bf1a8d55c07ad4561099866a787743681e9d14928fc78bc0a23e");
+    z-index:2;
+    }
+
+    #slide3:before {
+    background-image: url("https://img.freepik.com/free-photo/woman-with-blue-hair-gold-dress-is-standing-front-water-surface_1340-28222.jpg?w=996&t=st=1700161309~exp=1700161909~hmac=28e5e35fc8c5969a7309b4deedec2cb7863655ee4bce62965f82085817a8bb6f");
+    transform: translateZ(-1px) scale(2);
+    }
+
+    #slide4 {
+    /* background: #222; */
+    background-image: url("https://img.freepik.com/free-photo/vibrant-colors-flow-abstract-wave-pattern-generated-by-ai_188544-9781.jpg?w=1060&t=st=1700161164~exp=1700161764~hmac=8655f2d541406d65d5e60ae9fe38bbafcb2a912d902a8ea49a5bf84906194742");
+    }
+    .custlogo{
+        border: solid 15px rgb(114, 50, 114);
+    }
+
+    .testo-rtl2 {
+        direction: rtl;
+        overflow: hidden; /* Assicura che il testo nascosto fuori dalla vista */
+        white-space: nowrap; /* Impedisce la riga automatica del testo */
+        animation: slideRightToLeft 15s ease-in-out; /* Animazione da destra verso sinistra in 2 secondi */
+      }
+      
+      @keyframes slideRightToLeft {
+        from {
+          transform: translateX(100%); /* Inizia fuori dalla vista a destra */
+        }
+        to {
+          transform: translateX(0); /* Arriva nella vista a sinistra */
+        }
+      }
+    
+      .testo-ltr2 {
+        direction: ltr;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: slideLeftToRight 14s ease-in-out;
+      }
+      
+      @keyframes slideLeftToRight {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+/* Fine slide */
+/* inizio footer */
+
+    footer{
+        background-color: #000;
+        color: #fff;
+        height: 50vh;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer li{
+
+        margin-top: 15vh;
+        margin-bottom: 4vh;
+        list-style-type: none;
+    }
+
+    .socialcust{
+        height: 50px;
+    }
+
+    .fa-brands{
+        font-size: 55px;
+    }
+
+    .rewind{
+        color: yellowgreen;
+    }
+
+    footer a{
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 600px){
+        .navbar{
+            height: 150px;
+            
+            
+        }
+        .logo{
+            justify-content: center;
+            height: 55px;
+            border-radius: 50%;
+            border: solid 4px rgb(143, 143, 143);
+        }
+        nav ul{
+            display: block;
+        }
+    }
+    
