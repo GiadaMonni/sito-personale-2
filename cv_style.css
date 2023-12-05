@@ -19,9 +19,10 @@ main{
 .contatti{
    border: solid 4px black;
    border-radius: 15px;
-    height: 200vh;
-    width: 50vh;
+    height: 205vh !important;
+    width: 45vh;
     color: black;
+    
 }
 
 li{
@@ -107,4 +108,25 @@ a {
   .bottonicv{
     display: flex;
     justify-content: center;
+  }
+
+  @media screen and (max-width: 600px){
+
+    .contatti{
+      border: solid 4px black;
+      border-radius: 15px;
+       height: 200vh;
+       width: 25vh;
+       color: black;
+   }
+
+   .esperienze{
+   
+    border: solid 4px black;
+    border-radius: 15px;
+    height: 250vh;
+    width: 50vh;
+    color: black;
+}
+
   }

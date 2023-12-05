@@ -11,9 +11,7 @@ p{
   font-family: cursive;
 }
 
-.bdv{
-    height: 70vh;
-}
+
 .card {
     position: relative;
     width: 300px;
@@ -29,6 +27,9 @@ p{
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   
+  .bigliettino{
+    margin: 35px;
+  }
   .card img {
     /* width: 48px; */
     size: cover;
@@ -78,3 +79,29 @@ p{
     line-height: 1.4;
   }
   
+  @media screen and (max-width: 600px){
+
+    .card {
+      position: relative;
+      width: 140px;
+      height: 250px !important;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      perspective: 500px;
+      box-shadow: 4px 4px 2px 1px rgba(44, 44, 44,0.5);
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .card__description {
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      color: black;
+      line-height: 1.4;
+    }
+
+  }
